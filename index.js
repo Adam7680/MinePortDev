@@ -11,8 +11,8 @@ bot.on('ready', function () {
 
 bot.on('guildMemberAdd', member => {
     member.createDM().then(channel => {
-        return channel.send('Bienvenue sur le serveur de Alexpgm' + member.displayName)
-        console.log(`${member.displayName} à rejoind le serveur.`)
+        return channel.send('Bienvenue sur le serveur de MinePortDev' + member.displayName)
+        console.log(`${member.displayName} à rejoint le serveur.`)
     }).catch(console.error)
 });
 
@@ -34,7 +34,7 @@ bot.on('message', msg => {
             msg.reply('Je suis d\'accord avec toi.')
     }
     if (msg.content === prefix + "site"){
-        msg.channel.send("https://alexpgm.000webhostapp.com/")
+        msg.channel.send("https://mineportdev.sitew.fr/")
         console.log("Une personne a demandé pour aller sur ton site.")
     }
 
